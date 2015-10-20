@@ -1,0 +1,47 @@
+/* /////////////////////////////////////////////////////
+
+MODULES
+// Group related modules or families of modules into separate files
+// Use class names for all modules
+// Use class names for all non-semantic children (divs, spans, etc). 
+
+///////////////////////////////////////////////////// */
+
+
+/* Feature Block
+--------------------------------------------- */
+
+// Use hyphens to specify multi-word names
+// Nest pseudo elements
+// Nest Media Queries
+// By default, create media queries "mobile first"
+// Nest "upper context" selectors
+
+.feature-block 
+  color: black
+  
+  &:hover
+    color blue
+  
+  +above($desktop)
+    color orange
+    
+  body.home & 
+    color green
+
+// Use name of module and two underscores to prefix descendant names
+// Do not nest descendant within parent module
+// Nest descendant's media queries within descendant (not parent)
+
+.feature-block__descendant
+  color: red
+  
+  +above(600px)
+    color aqua
+
+// Use name of module and two hyphens to prefix modifier names
+// Do not @extend base module within modifier
+// Class intended to be applied in HTML along with base module class
+
+.feature-block--modifier
+  border-radius 20px 

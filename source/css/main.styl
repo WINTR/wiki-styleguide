@@ -1,0 +1,239 @@
+/* /////////////////////////////////////////////////////
+
+WINTR Stylus Boilerplate
+Author: matt@wintr.us
+
+///////////////////////////////////////////////////// */
+
+
+/* Variables (use the "$" prefix)
+--------------------------------------------- */
+
+// Colors
+$base-color = black
+
+// Fonts
+$body-font = Helvetica, Arial, sans-serif
+
+$body-font-size = 14px
+$base-line-height = 1.3
+
+// Margin & Padding
+$global-margin = 20px
+$global-padding = 20px
+
+// Breakpoints
+$tablet = 400px
+$desktop = 800px
+$wide-desktop = 1200px
+
+
+/* Imports
+--------------------------------------------- */
+
+@import 'jeet'
+@import '_reset'
+@import "_fonts"
+@import "_utils"
+@import "_base"
+@import "_layout"
+@import "modules/*"
+@import "pages/*"
+
+/* Placeholder
+--------------------------------------------- */
+
+$wikipurple = #556192
+$wikipurple-dark = #444E75
+$steel = #666666
+$jaguar = #2B2B2B
+
+/* STYLEGUIDE UI */
+.py1
+  padding 1rem 0
+.my1
+  margin 1rem 0
+.styleguide-my1
+  margin 1rem 0
+.w100
+  width 100%
+  
+.left
+  float left
+.right
+  float right
+
+body
+  font-family "Open Sans"
+
+.bg-color
+  padding 20px
+  background #f8f8f8
+  
+.wrap
+  max-width 1000px
+  margin 0 auto
+  padding 20px
+  
+hr
+  border 1px solid #D3D3D3
+
+.section
+  
+.section h3
+  margin-top 50px
+  padding-bottom 0
+  font-size 1.5rem
+  font-weight 300
+  color #000
+  
+/* HEADERS */
+h1
+  font-size 22px
+  font-weight 700
+  padding 1rem 0
+
+.card__header
+  padding 12px 20px
+  background #000
+  font-size 18px
+  letter-spacing .5px
+  color #fff
+  
+.toc__header
+  font-size 14px
+  font-weight 700
+  text-transform uppercase
+  
+.slide__header
+  font-size 16px
+  font-weight 700
+
+.toc__item-header
+  margin-bottom 5px
+  font-size 16px
+  font-weight 700
+  color #3A3D46
+
+/* TYPE */
+p
+  max-width 750px
+  padding .75rem 0
+  font-size 19px
+  line-height 29px
+  font-weight 300
+  
+.secondary
+  max-width 555px
+  padding 0
+  font-size 16px
+  font-weight 400
+  line-height 26px
+  color $steel
+  
+.tertiary
+  max-width 555px
+  padding 0
+  font-size 16px
+  font-weight 400
+  line-height 24px
+  color #3A3D46
+  
+.breadcrumb
+  font-size 12px
+  text-decoration underline
+  color $steel
+  
+.slide__navigation
+  font-size 15px
+  font-style italic
+  text-decoration underline
+  color $jaguar
+  
+/* Buttons */
+button
+  margin-top 10px
+  padding 0px
+  border 0px
+  font-family "Open Sans"
+  font-size 15px
+  font-weight 700
+  letter-spacing 2px
+  background $wikipurple
+  color #fff
+  &:hover
+    background $wikipurple-dark
+  p
+    padding 8px 20px 0 20px
+    float left
+  
+.icon 
+  float right
+  width 45px
+  height 45px
+  background $wikipurple-dark
+  img
+    width 45%
+    margin-top 14px
+    margin-left 0px
+
+/* EXAMPLE CSS */
+
+/* Card Module Start */
+.category__module
+  width 100%
+  max-width 600px
+  margin-bottom 30px
+  background #fff
+  box-shadow 0px 1px 6px rgba(0,0,0, .1)
+
+.module__title
+  background $wikipurple
+  height 45px
+  color #fff
+  .card__header
+    background $wikipurple
+  h2
+    padding 12px 0 0 20px
+    float left
+
+.module__content
+  padding 20px 20px 25px 20px
+
+.icon
+  float right
+  width 45px
+  height 45px
+  background $wikipurple-dark
+  
+.module__title img
+  width 45%
+  margin 14px 0 0 11px
+/* Card Module End */
+
+/* TOC START */
+.title
+  width 100%
+  float left
+  margin-top 0
+  border-bottom 1px solid #000
+  p
+    padding 0
+    margin-bottom 0
+ol
+  font-size 16px
+  font-weight 700
+  margin-left 25px
+  list-style-type decimal
+  color #3A3D46
+  li
+    padding .75rem 0
+    
+.toc
+  position relative
+  width 36%
+  .scroll-wrap
+    width 100%
+    margin-top 50px
+    overflow auto
+/* TOC END */

@@ -1,0 +1,63 @@
+%html
+  %head
+    %link{href: "assets/css/main.css", rel: "stylesheet", type: "text/css"}
+  .wrap
+    <!-- Headers -->
+    .section
+      %h3 Headers
+      %hr
+    %h1 H1 Header
+    .card__header Card Header
+    .toc__header.py1 Table of Contents
+    .slide__header This is the name of the module
+    .toc__item-header.my1 Item Header
+    <!-- Type -->
+    .section
+      %h3 Type
+      %hr
+    %p
+      Main body copy. This style is used for the main content of a page. For example the tutorial body copy in a slide.
+    %p.secondary
+      Secondary Body Copy. Primarily used in the body copy of a card. This syle should be used for secondary paragraphs.
+    %p.tertiary.my1
+      Tertiary Body Copy. Used in UI that is secondary to a major area. For example, the Table of Contents on the overview page.
+    .w100
+      %a.breadcrumb
+        Example > of a > Breadcrumb
+    .w100.my1
+      %a.slide__navigation
+        Slide Navigation
+      
+    <!-- Headers + Type Examples -->
+    .section
+      %h3 Headers + Type Examples
+      %hr
+      %h1 Five Pillars
+      %p 
+        Although Wikipedia is the encyclopedia anyone can edit, that doesn't mean that everyone can edit it independently. But good articles aren’t written by making chaotic, random edits. In fact, a lot goes on behind the scenes of every page! When volunteers work on an article, they’re working within a set of principles, often called the Five Pillars.
+      .bg-color.my1
+        .category__module
+          .module__title
+            %h2.card__header Welcome to Wikipedia
+            .icon
+              %img{src: "http://i.imgsafe.org/bfd7bcf.png", alt: ""}/
+          .module__content
+            %p.secondary
+              Basic mechanics of editing Wikipedia pages and communicating with others. Lorem ipsum does el ipsum lorenm la.
+      .toc
+        .title
+          %p.left.toc__header Table of Contents
+          %p.right.toc__header 20 Pages
+        .scroll-wrap
+          .module__preview
+          %ol
+            %li.module__item
+              .toc__item-header Item Header
+              %p.tertiary Brief description of what will be covered on this slide. Lorem ipsum dolor es qua.
+    .section
+      %h3 Buttons
+      %hr
+      %button 
+        %p Start
+        .icon
+          %img{src: "http://i.imgsafe.org/bfd7bcf.png", alt: ""}/
