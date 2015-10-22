@@ -1,16 +1,24 @@
 %html
   %head
     %link{href: "assets/css/main.css", rel: "stylesheet", type: "text/css"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600", rel: "stylesheet", type: "text/css"}
+    %link{href: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300", rel: "stylesheet", type: "text/css"}
+    
   .wrap
     <!-- Headers -->
     .section
       %h3 Headers
       %hr
+    .section__header Section Header
     %h1 H1 Header
-    .card__header Card Header
-    .toc__header.py1 Table of Contents
-    .slide__header This is the name of the module
-    .toc__item-header.my1 Item Header
+    .container--styleguide.container--styleguide--background
+      .card-block__title Card Header
+    .container--styleguide  
+      .toc__header.py1 Table of Contents
+    .container--styleguide
+      .slide__header This is the name of the module
+    .container--styleguide
+      .toc__item-header.my1 Item Header
     <!-- Type -->
     .section
       %h3 Type
@@ -36,12 +44,12 @@
       %p 
         Although Wikipedia is the encyclopedia anyone can edit, that doesn't mean that everyone can edit it independently. But good articles aren’t written by making chaotic, random edits. In fact, a lot goes on behind the scenes of every page! When volunteers work on an article, they’re working within a set of principles, often called the Five Pillars.
       .bg-color.my1
-        .category__module
-          .module__title
-            %h2.card__header Welcome to Wikipedia
-            .icon
+        .card-block
+          .card-block__header
+            %h2.card-block__title Welcome to Wikipedia
+            .icon-card
               %img{src: "http://i.imgsafe.org/bfd7bcf.png", alt: ""}/
-          .module__content
+          .card-block__content
             %p.secondary
               Basic mechanics of editing Wikipedia pages and communicating with others. Lorem ipsum does el ipsum lorenm la.
       .toc
