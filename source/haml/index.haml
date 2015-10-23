@@ -11,7 +11,7 @@
       %hr
     .section__header Section Header
     %h1 H1 Header
-    .container--styleguide.container--styleguide--background
+    .container--styleguide.container--styleguide-dark
       .card-block__title Card Header
     .container--styleguide  
       .toc__header.py1 Table of Contents
@@ -34,7 +34,7 @@
         Example > of a > Breadcrumb
     .w100.my1
       %a.slide__navigation
-        Slide Navigation
+        < Slide Navigation
       
     <!-- Headers + Type Examples -->
     .section
@@ -55,13 +55,24 @@
       .toc
         .title
           %p.left.toc__header Table of Contents
-          %p.right.toc__header 20 Pages
+          %p.right.toc__pagenumber (20)
         .scroll-wrap
           .module__preview
           %ol
             %li.module__item
               .toc__item-header Item Header
               %p.tertiary Brief description of what will be covered on this slide. Lorem ipsum dolor es qua.
+    .training__header
+      %ul.training__breadcrumb
+        %li Library
+        %li ">"
+        %li Policies and Guidelines
+      .training__counter
+        %p Page 2 of 22
+        .bar-container
+          .bar
+          .bar
+          .bar
     .section
       %h3 Buttons
       %hr
